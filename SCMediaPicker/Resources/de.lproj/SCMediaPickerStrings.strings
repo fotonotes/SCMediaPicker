@@ -1,9 +1,9 @@
 /* 
-  QBImagePicker.strings
-  QBImagePicker
+  SCMediaPickerStrings.strings
+  SCMediaPicker
 
-  Created by Katsuma Tanaka on 2015/04/03.
-  Copyright (c) 2015 Katsuma Tanaka. All rights reserved.
+  Created by Glenn Posadas on 10/1/24.
+  
 */
 
 "albums.title" = "Fotos";
@@ -19,3 +19,4 @@
 
 "assets.toolbar.item-selected" = "%ld Element ausgewählt";
 "assets.toolbar.items-selected" = "%ld Elemente ausgewählt";
+

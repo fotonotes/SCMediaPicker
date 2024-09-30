@@ -16,13 +16,8 @@
 		4576EACA2CAB4CBD004EF52C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4576EAC92CAB4CBD004EF52C /* Base */; };
 		4576EACC2CAB4CBF004EF52C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4576EACB2CAB4CBF004EF52C /* Assets.xcassets */; };
 		4576EACF2CAB4CBF004EF52C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4576EACE2CAB4CBF004EF52C /* Base */; };
-		4576EAE22CAB4E45004EF52C /* QBImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4576EAD42CAB4E45004EF52C /* QBImagePicker.storyboard */; };
-		4576EAE32CAB4E45004EF52C /* QBImagePicker.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4576EAD62CAB4E45004EF52C /* QBImagePicker.strings */; };
-		4576EAE42CAB4E45004EF52C /* QBImagePicker.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4576EAD82CAB4E45004EF52C /* QBImagePicker.strings */; };
-		4576EAE52CAB4E45004EF52C /* QBImagePicker.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4576EADA2CAB4E45004EF52C /* QBImagePicker.strings */; };
-		4576EAE62CAB4E45004EF52C /* QBImagePicker.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4576EADC2CAB4E45004EF52C /* QBImagePicker.strings */; };
-		4576EAE72CAB4E45004EF52C /* QBImagePicker.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4576EADE2CAB4E45004EF52C /* QBImagePicker.strings */; };
-		4576EAE82CAB4E45004EF52C /* QBImagePicker.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4576EAE02CAB4E45004EF52C /* QBImagePicker.strings */; };
+		4576EAE22CAB4E45004EF52C /* SCMediaPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4576EAD42CAB4E45004EF52C /* SCMediaPicker.storyboard */; };
+		4576EAEB2CAB572A004EF52C /* SCMediaPickerStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4576EAE92CAB572A004EF52C /* SCMediaPickerStrings.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,13 +43,13 @@
 		4576EACB2CAB4CBF004EF52C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4576EACE2CAB4CBF004EF52C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4576EAD02CAB4CBF004EF52C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4576EAD42CAB4E45004EF52C /* QBImagePicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QBImagePicker.storyboard; sourceTree = "<group>"; };
-		4576EAD52CAB4E45004EF52C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/QBImagePicker.strings; sourceTree = "<group>"; };
-		4576EAD72CAB4E45004EF52C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/QBImagePicker.strings"; sourceTree = "<group>"; };
-		4576EAD92CAB4E45004EF52C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/QBImagePicker.strings; sourceTree = "<group>"; };
-		4576EADB2CAB4E45004EF52C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/QBImagePicker.strings; sourceTree = "<group>"; };
-		4576EADD2CAB4E45004EF52C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/QBImagePicker.strings; sourceTree = "<group>"; };
-		4576EADF2CAB4E45004EF52C /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/QBImagePicker.strings; sourceTree = "<group>"; };
+		4576EAD42CAB4E45004EF52C /* SCMediaPicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SCMediaPicker.storyboard; sourceTree = "<group>"; };
+		4576EAEA2CAB572A004EF52C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SCMediaPickerStrings.strings; sourceTree = "<group>"; };
+		4576EAEC2CAB573C004EF52C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SCMediaPickerStrings.strings"; sourceTree = "<group>"; };
+		4576EAED2CAB5745004EF52C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/SCMediaPickerStrings.strings; sourceTree = "<group>"; };
+		4576EAEE2CAB5745004EF52C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/SCMediaPickerStrings.strings; sourceTree = "<group>"; };
+		4576EAEF2CAB5746004EF52C /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/SCMediaPickerStrings.strings; sourceTree = "<group>"; };
+		4576EAF02CAB5747004EF52C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/SCMediaPickerStrings.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,13 +132,8 @@
 		4576EAE12CAB4E45004EF52C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4576EAD42CAB4E45004EF52C /* QBImagePicker.storyboard */,
-				4576EAD62CAB4E45004EF52C /* QBImagePicker.strings */,
-				4576EAD82CAB4E45004EF52C /* QBImagePicker.strings */,
-				4576EADA2CAB4E45004EF52C /* QBImagePicker.strings */,
-				4576EADC2CAB4E45004EF52C /* QBImagePicker.strings */,
-				4576EADE2CAB4E45004EF52C /* QBImagePicker.strings */,
-				4576EAE02CAB4E45004EF52C /* QBImagePicker.strings */,
+				4576EAD42CAB4E45004EF52C /* SCMediaPicker.storyboard */,
+				4576EAE92CAB572A004EF52C /* SCMediaPickerStrings.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -266,13 +256,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4576EAE62CAB4E45004EF52C /* QBImagePicker.strings in Resources */,
-				4576EAE22CAB4E45004EF52C /* QBImagePicker.storyboard in Resources */,
-				4576EAE82CAB4E45004EF52C /* QBImagePicker.strings in Resources */,
-				4576EAE52CAB4E45004EF52C /* QBImagePicker.strings in Resources */,
-				4576EAE32CAB4E45004EF52C /* QBImagePicker.strings in Resources */,
-				4576EAE42CAB4E45004EF52C /* QBImagePicker.strings in Resources */,
-				4576EAE72CAB4E45004EF52C /* QBImagePicker.strings in Resources */,
+				4576EAE22CAB4E45004EF52C /* SCMediaPicker.storyboard in Resources */,
+				4576EAEB2CAB572A004EF52C /* SCMediaPickerStrings.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,52 +333,17 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		4576EAD62CAB4E45004EF52C /* QBImagePicker.strings */ = {
+		4576EAE92CAB572A004EF52C /* SCMediaPickerStrings.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4576EAD52CAB4E45004EF52C /* de */,
+				4576EAEA2CAB572A004EF52C /* en */,
+				4576EAEC2CAB573C004EF52C /* zh-Hans */,
+				4576EAED2CAB5745004EF52C /* de */,
+				4576EAEE2CAB5745004EF52C /* ja */,
+				4576EAEF2CAB5746004EF52C /* pl */,
+				4576EAF02CAB5747004EF52C /* es */,
 			);
-			name = QBImagePicker.strings;
-			sourceTree = "<group>";
-		};
-		4576EAD82CAB4E45004EF52C /* QBImagePicker.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4576EAD72CAB4E45004EF52C /* zh-Hans */,
-			);
-			name = QBImagePicker.strings;
-			sourceTree = "<group>";
-		};
-		4576EADA2CAB4E45004EF52C /* QBImagePicker.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4576EAD92CAB4E45004EF52C /* ja */,
-			);
-			name = QBImagePicker.strings;
-			sourceTree = "<group>";
-		};
-		4576EADC2CAB4E45004EF52C /* QBImagePicker.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4576EADB2CAB4E45004EF52C /* en */,
-			);
-			name = QBImagePicker.strings;
-			sourceTree = "<group>";
-		};
-		4576EADE2CAB4E45004EF52C /* QBImagePicker.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4576EADD2CAB4E45004EF52C /* es */,
-			);
-			name = QBImagePicker.strings;
-			sourceTree = "<group>";
-		};
-		4576EAE02CAB4E45004EF52C /* QBImagePicker.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4576EADF2CAB4E45004EF52C /* pl */,
-			);
-			name = QBImagePicker.strings;
+			name = SCMediaPickerStrings.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
