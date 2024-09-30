@@ -49,6 +49,7 @@
 		4545677B2CAB440600ACF0C1 /* SCMediaPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCMediaPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4545677F2CAB440600ACF0C1 /* SCMediaPickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMediaPickerUITests.swift; sourceTree = "<group>"; };
 		454567812CAB440600ACF0C1 /* SCMediaPickerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMediaPickerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4545678E2CAB454200ACF0C1 /* SCMediaPicker.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SCMediaPicker.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		454567522CAB440400ACF0C1 = {
 			isa = PBXGroup;
 			children = (
+				4545678E2CAB454200ACF0C1 /* SCMediaPicker.podspec */,
 				4545675D2CAB440400ACF0C1 /* SCMediaPicker */,
 				454567742CAB440600ACF0C1 /* SCMediaPickerTests */,
 				4545677E2CAB440600ACF0C1 /* SCMediaPickerUITests */,
