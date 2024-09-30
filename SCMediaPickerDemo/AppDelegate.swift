@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SCMediaPicker
+//  SCMediaPickerDemo
 //
 //  Created by Glenn Posadas on 10/1/24.
 //

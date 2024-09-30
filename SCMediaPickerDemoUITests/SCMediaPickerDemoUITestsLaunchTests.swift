@@ -1,13 +1,13 @@
 //
-//  SCMediaPickerUITestsLaunchTests.swift
-//  SCMediaPickerUITests
+//  SCMediaPickerDemoUITestsLaunchTests.swift
+//  SCMediaPickerDemoUITests
 //
 //  Created by Glenn Posadas on 10/1/24.
 //
 
 import XCTest
 
-final class SCMediaPickerUITestsLaunchTests: XCTestCase {
+final class SCMediaPickerDemoUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
