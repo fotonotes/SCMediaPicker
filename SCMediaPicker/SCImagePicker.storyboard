@@ -106,7 +106,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="laG-jk-Ma2">
                             <connections>
-                                <action selector="done:" destination="QL5-wR-LYt" id="Try-7j-DzS"/>
+                                <action selector="done:" destination="QL5-wR-LYt" id="1QU-My-6i8"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

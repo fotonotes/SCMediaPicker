@@ -70,6 +70,7 @@ class SCAlbumsViewController: UITableViewController, PHPhotoLibraryChangeObserve
     }
     
     // MARK: - Actions
+    
     @IBAction func cancel(_ sender: Any) {
         imagePickerController?.delegate?.sc_imagePickerControllerDidCancel(imagePickerController!)
     }

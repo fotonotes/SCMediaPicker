@@ -118,6 +118,15 @@ class SCAssetsViewController: UICollectionViewController, PHPhotoLibraryChangeOb
         PHPhotoLibrary.shared().unregisterChangeObserver(self)
     }
     
+    @IBAction func done(_ sender: Any) {
+        guard let imagePickerController = imagePickerController,
+              let delegate = imagePickerController.delegate else {
+            return
+        }
+        
+        delegate.sc_imagePickerController(imagePickerController, didFinishPickingAssets: imagePickerController.selectedAssets.array.compactMap({ $0 as? PHAsset }))
+    }
+    
     func setUpToolbarItems() {
         let leftSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         let rightSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
@@ -187,6 +196,9 @@ class SCAssetsViewController: UICollectionViewController, PHPhotoLibraryChangeOb
     }
     
     func updateDoneButtonState() {
+        guard doneButton != nil else {
+            return
+        }
         doneButton.isEnabled = isMinimumSelectionLimitFulfilled()
     }
     
