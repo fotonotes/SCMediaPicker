@@ -104,10 +104,8 @@ class SCAlbumsViewController: UITableViewController, PHPhotoLibraryChangeObserve
             let format: String
             if selectedAssets.count > 1 {
                 format = bundle.localizedString(forKey: "assets.toolbar.items-selected", value: "%ld Items Selected", table: "SCImagePicker")
-                //NSLocalizedString("assets.toolbar.items-selected", tableName: "SCImagePicker", bundle: bundle, comment: "")
             } else {
                 format = bundle.localizedString(forKey: "assets.toolbar.item-selected", value: "%ld Item Selected", table: "SCImagePicker")
-                //NSLocalizedString("assets.toolbar.item-selected", tableName: "SCImagePicker", bundle: bundle, comment: "")
             }
             
             let title = String(format: format, selectedAssets.count)

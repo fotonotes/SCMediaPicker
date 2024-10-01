@@ -140,10 +140,8 @@ class SCAssetsViewController: UICollectionViewController, PHPhotoLibraryChangeOb
             let format: String
             if selectedAssets.count > 1 {
                 format = bundle.localizedString(forKey: "assets.toolbar.items-selected", value: "%ld Items Selected", table: "SCImagePicker")
-                //NSLocalizedString("assets.toolbar.items-selected", comment: "")
             } else {
                 format = bundle.localizedString(forKey: "assets.toolbar.item-selected", value: "%ld Item Selected", table: "SCImagePicker")
-                //NSLocalizedString("assets.toolbar.item-selected", comment: "")
             }
             
             let title = String(format: format, selectedAssets.count)
@@ -402,33 +400,32 @@ class SCAssetsViewController: UICollectionViewController, PHPhotoLibraryChangeOb
                 let numberOfPhotos = fetchResult.countOfAssets(with: .image)
                 let numberOfVideos = fetchResult.countOfAssets(with: .video)
                 
-                let text: String
-                switch imagePickerController?.mediaType {
-                case .some(.any):
-                    if numberOfPhotos == 1 {
-                        text = bundle.localizedString(forKey: "assets.footer.photo-and-video", value: "%ld Photo, %ld Video", table: "SCImagePicker")
+                var format = ""
+                
+                if let mediaType = imagePickerController?.mediaType {
+                    switch mediaType {
+                    case .any:
+                        if numberOfPhotos == 1 {
+                            format = bundle.localizedString(forKey: "assets.footer.photo-and-video", value: "%ld Photo, %ld Video", table: "SCImagePicker")
+                        } else if numberOfVideos == 1 {
+                            format = bundle.localizedString(forKey: "assets.footer.photos-and-video", value: "%ld Photos, %ld Video", table: "SCImagePicker")
+                        } else {
+                            format = bundle.localizedString(forKey: "assets.footer.photos-and-videos", value: "%ld Photos, %ld Videos", table: "SCImagePicker")
+                        }
                         
-                    } else if numberOfVideos == 1 {
-                        text = bundle.localizedString(forKey: "assets.footer.photos-and-video", value: "%ld Photos, %ld Video", table: "SCImagePicker")
-                    } else {
-                        text = bundle.localizedString(forKey: "assets.footer.photos-and-videos", value: "%ld Photos, %ld Videos", table: "SCImagePicker")
+                    case .image:
+                        let key = numberOfPhotos == 1 ? "assets.footer.photo" : "assets.footer.photos"
+                        let val = numberOfPhotos == 1 ? "%ld Photo" : "%ld Photos"
+                        format = bundle.localizedString(forKey: key, value: val, table: "SCImagePicker")
+                        
+                    case .video:
+                        let key = numberOfVideos == 1 ? "assets.footer.video" : "assets.footer.videos"
+                        let val = numberOfPhotos == 1 ? "%ld Video" : "%ld Videos"
+                        format = bundle.localizedString(forKey: key, value: val, table: "SCImagePicker")
                     }
-                    
-                case .some(.image):
-                    let key = numberOfPhotos == 1 ? "assets.footer.photo" : "assets.footer.photos"
-                    let val = numberOfPhotos == 1 ? "%ld Photo" : "%ld Photos"
-                    text = bundle.localizedString(forKey: key, value: val, table: "SCImagePicker")
-                    
-                case .some(.video):
-                    let key = numberOfVideos == 1 ? "assets.footer.video" : "assets.footer.videos"
-                    let val = numberOfPhotos == 1 ? "%ld Video" : "%ld VideoS"
-                    text = bundle.localizedString(forKey: key, value: val, table: "SCImagePicker")
-                    
-                default:
-                    return footerView
                 }
                 
-                label.text = text
+                label.text =  String(format: format, numberOfPhotos, numberOfVideos)
             }
             
             return footerView
