@@ -11,7 +11,9 @@ import Photos
 class SCAlbumsViewController: UITableViewController, PHPhotoLibraryChangeObserver {
     
     weak var imagePickerController: SCImagePickerController?
-    private var doneButton: UIBarButtonItem!
+    
+    @IBOutlet weak var doneButton: UIBarButtonItem!
+
     private var fetchResults: [PHFetchResult<PHAssetCollection>] = []
     private var assetCollections: [PHAssetCollection] = []
     
@@ -35,7 +37,10 @@ class SCAlbumsViewController: UITableViewController, PHPhotoLibraryChangeObserve
         super.viewWillAppear(animated)
         
         // Configure navigation item
-        self.navigationItem.title = NSLocalizedString("albums.title", tableName: "SCImagePicker", bundle: imagePickerController?.assetBundle ?? .main, comment: "")
+        let bundle = imagePickerController?.assetBundle ?? .main
+        let title = bundle.localizedString(forKey: "albums.title", value: "Photos", table: "SCImagePicker")
+        
+        self.navigationItem.title = title
         self.navigationItem.prompt = imagePickerController?.prompt
         
         // Show/hide 'Done' button
@@ -98,9 +103,11 @@ class SCAlbumsViewController: UITableViewController, PHPhotoLibraryChangeObserve
             let bundle = imagePickerController?.assetBundle ?? .main
             let format: String
             if selectedAssets.count > 1 {
-                format = NSLocalizedString("assets.toolbar.items-selected", tableName: "SCImagePicker", bundle: bundle, comment: "")
+                format = bundle.localizedString(forKey: "assets.toolbar.items-selected", value: "%ld Items Selected", table: "SCImagePicker")
+                //NSLocalizedString("assets.toolbar.items-selected", tableName: "SCImagePicker", bundle: bundle, comment: "")
             } else {
-                format = NSLocalizedString("assets.toolbar.item-selected", tableName: "SCImagePicker", bundle: bundle, comment: "")
+                format = bundle.localizedString(forKey: "assets.toolbar.item-selected", value: "%ld Item Selected", table: "SCImagePicker")
+                //NSLocalizedString("assets.toolbar.item-selected", tableName: "SCImagePicker", bundle: bundle, comment: "")
             }
             
             let title = String(format: format, selectedAssets.count)

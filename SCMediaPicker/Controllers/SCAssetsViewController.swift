@@ -34,7 +34,13 @@ extension UICollectionView {
 
 class SCAssetsViewController: UICollectionViewController, PHPhotoLibraryChangeObserver, UICollectionViewDelegateFlowLayout {
     
+    // MARK: -
+    // MARK: Properties
+        
+    @IBOutlet weak var doneButton: UIBarButtonItem!
+    
     weak var imagePickerController: SCImagePickerController?
+    
     var assetCollection: PHAssetCollection? {
         didSet {
             updateFetchRequest()
@@ -42,12 +48,14 @@ class SCAssetsViewController: UICollectionViewController, PHPhotoLibraryChangeOb
         }
     }
     
-    private var doneButton: UIBarButtonItem!
     private var fetchResult: PHFetchResult<PHAsset>!
     private var imageManager = PHCachingImageManager()
     private var previousPreheatRect = CGRect.zero
     private var disableScrollToBottom = false
     private var lastSelectedItemIndexPath: IndexPath?
+    
+    // MARK: -
+    // MARK: Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -126,12 +134,16 @@ class SCAssetsViewController: UICollectionViewController, PHPhotoLibraryChangeOb
     func updateSelectionInfo() {
         guard let selectedAssets = imagePickerController?.selectedAssets else { return }
         
+        let bundle = imagePickerController?.assetBundle ?? .main
+        
         if selectedAssets.count > 0 {
             let format: String
             if selectedAssets.count > 1 {
-                format = NSLocalizedString("assets.toolbar.items-selected", comment: "")
+                format = bundle.localizedString(forKey: "assets.toolbar.items-selected", value: "%ld Items Selected", table: "SCImagePicker")
+                //NSLocalizedString("assets.toolbar.items-selected", comment: "")
             } else {
-                format = NSLocalizedString("assets.toolbar.item-selected", comment: "")
+                format = bundle.localizedString(forKey: "assets.toolbar.item-selected", value: "%ld Item Selected", table: "SCImagePicker")
+                //NSLocalizedString("assets.toolbar.item-selected", comment: "")
             }
             
             let title = String(format: format, selectedAssets.count)
@@ -386,29 +398,37 @@ class SCAssetsViewController: UICollectionViewController, PHPhotoLibraryChangeOb
             let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "FooterView", for: indexPath)
             
             if let label = footerView.viewWithTag(1) as? UILabel {
-                let bundle = imagePickerController?.assetBundle
+                let bundle = imagePickerController?.assetBundle ?? .main
                 let numberOfPhotos = fetchResult.countOfAssets(with: .image)
                 let numberOfVideos = fetchResult.countOfAssets(with: .video)
                 
-                let format: String
+                let text: String
                 switch imagePickerController?.mediaType {
                 case .some(.any):
                     if numberOfPhotos == 1 {
-                        format = numberOfVideos == 1 ? "assets.footer.photo-and-video" : "assets.footer.photo-and-videos"
+                        text = bundle.localizedString(forKey: "assets.footer.photo-and-video", value: "%ld Photo, %ld Video", table: "SCImagePicker")
+                        
                     } else if numberOfVideos == 1 {
-                        format = "assets.footer.photos-and-video"
+                        text = bundle.localizedString(forKey: "assets.footer.photos-and-video", value: "%ld Photos, %ld Video", table: "SCImagePicker")
                     } else {
-                        format = "assets.footer.photos-and-videos"
+                        text = bundle.localizedString(forKey: "assets.footer.photos-and-videos", value: "%ld Photos, %ld Videos", table: "SCImagePicker")
                     }
+                    
                 case .some(.image):
-                    format = numberOfPhotos == 1 ? "assets.footer.photo" : "assets.footer.photos"
+                    let key = numberOfPhotos == 1 ? "assets.footer.photo" : "assets.footer.photos"
+                    let val = numberOfPhotos == 1 ? "%ld Photo" : "%ld Photos"
+                    text = bundle.localizedString(forKey: key, value: val, table: "SCImagePicker")
+                    
                 case .some(.video):
-                    format = numberOfVideos == 1 ? "assets.footer.video" : "assets.footer.videos"
+                    let key = numberOfVideos == 1 ? "assets.footer.video" : "assets.footer.videos"
+                    let val = numberOfPhotos == 1 ? "%ld Video" : "%ld VideoS"
+                    text = bundle.localizedString(forKey: key, value: val, table: "SCImagePicker")
+                    
                 default:
                     return footerView
                 }
                 
-                label.text = String(format: NSLocalizedString(format, tableName: "SCImagePicker", bundle: bundle!, comment: ""), numberOfPhotos, numberOfVideos)
+                label.text = text
             }
             
             return footerView
