@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,13 +9,13 @@
         <!--Photos-->
         <scene sceneID="swb-gz-Gt9">
             <objects>
-                <tableViewController storyboardIdentifier="QBAlbumsViewController" id="QL5-wR-LYt" customClass="QBAlbumsViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SCAlbumsViewController" id="QL5-wR-LYt" customClass="SCAlbumsViewController" customModule="SCMediaPicker" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="86" sectionHeaderHeight="22" sectionFooterHeight="22" id="66K-TS-Yoc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AlbumCell" rowHeight="86" id="dSc-nm-apo" customClass="QBAlbumCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AlbumCell" rowHeight="86" id="dSc-nm-apo" customClass="SCAlbumCell" customModule="SCMediaPicker" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="393" height="86"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dSc-nm-apo" id="7lA-qJ-5l4">
@@ -122,7 +121,7 @@
         <!--Album Title-->
         <scene sceneID="ozY-oO-5JA">
             <objects>
-                <collectionViewController storyboardIdentifier="QBAssetsViewController" id="QiH-NZ-ZGN" customClass="QBAssetsViewController" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="SCAssetsViewController" id="QiH-NZ-ZGN" customClass="SCAssetsViewController" customModule="SCMediaPicker" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="sD2-zK-ryo">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,7 +133,7 @@
                             <inset key="sectionInset" minX="0.0" minY="8" maxX="0.0" maxY="2"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AssetCell" id="fc0-k1-HNL" customClass="QBAssetCell">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AssetCell" id="fc0-k1-HNL" customClass="SCAssetCell" customModule="SCMediaPicker" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="8" width="77.5" height="77.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -144,10 +143,10 @@
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0aq-fn-r9R">
                                             <rect key="frame" x="0.0" y="0.0" width="77.666666666666671" height="77.666666666666671"/>
                                         </imageView>
-                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BwJ-KE-LWZ" customClass="QBVideoIndicatorView">
+                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BwJ-KE-LWZ" customClass="SCVideoIndicatorView" customModule="SCMediaPicker" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="57.666666666666657" width="77.666666666666671" height="20"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rKh-6o-xw7" customClass="QBVideoIconView">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rKh-6o-xw7" customClass="SCVideoIconView" customModule="SCMediaPicker" customModuleProvider="target">
                                                     <rect key="frame" x="5" y="6" width="14" height="8"/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -155,7 +154,7 @@
                                                         <constraint firstAttribute="height" constant="8" id="d0g-9I-F2s"/>
                                                     </constraints>
                                                 </view>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1We-cC-Ruu" customClass="QBSlomoIconView">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1We-cC-Ruu" customClass="SCSlomoIconView" customModule="SCMediaPicker" customModuleProvider="target">
                                                     <rect key="frame" x="5" y="3" width="12" height="12"/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -190,7 +189,7 @@
                                         <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uyS-Tg-Iyl">
                                             <rect key="frame" x="0.0" y="0.0" width="77.666666666666671" height="77.666666666666671"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m99-yj-HSc" customClass="QBCheckmarkView">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m99-yj-HSc" customClass="SCCheckmarkView" customModule="SCMediaPicker" customModuleProvider="target">
                                                     <rect key="frame" x="49.666666666666664" y="49.666666666666664" width="23.999999999999993" height="23.999999999999993"/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -273,7 +272,7 @@
         <!--Navigation Controller-->
         <scene sceneID="TBV-v4-1AQ">
             <objects>
-                <navigationController storyboardIdentifier="QBAlbumsNavigationController" id="8Dq-FL-Kai" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SCAlbumsNavigationController" id="8Dq-FL-Kai" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Whc-Ry-EBq">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
