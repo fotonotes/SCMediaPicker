@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.author           = { "glennposadas" => "hello@glennvon.com" }
   s.source           = { :git => "https://github.com/fotonotes/SCMediaPicker.git", :tag => s.version.to_s }
   s.social_media_url = "https://www.glennvon.com"
-  s.source_files     = "SCMediaPicker/*.swift"
+  s.source_files     = "SCMediaPicker/*.{h,m}"
   s.resource_bundles = { "SCMediaPicker" => "SCMediaPicker/*.{lproj,storyboard}" }
   s.platform         = :ios, "17.0"
   s.requires_arc     = true
