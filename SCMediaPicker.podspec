@@ -12,5 +12,5 @@ Pod::Spec.new do |s|
   s.platform         = :ios, "15.0"
   s.requires_arc     = true
   s.frameworks       = "Photos"
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5' }
+  s.swift_version = '5.0'
 end
