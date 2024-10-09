@@ -13,12 +13,6 @@
 		4576EAAD2CAB4C4F004EF52C /* SCMediaPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4576EAA22CAB4C4F004EF52C /* SCMediaPicker.framework */; };
 		4576EAB22CAB4C4F004EF52C /* SCMediaPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4576EAB12CAB4C4F004EF52C /* SCMediaPickerTests.swift */; };
 		4576EAB32CAB4C4F004EF52C /* SCMediaPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4576EAA52CAB4C4F004EF52C /* SCMediaPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4576EAC32CAB4CBD004EF52C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4576EAC22CAB4CBD004EF52C /* AppDelegate.swift */; };
-		4576EAC52CAB4CBD004EF52C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4576EAC42CAB4CBD004EF52C /* SceneDelegate.swift */; };
-		4576EAC72CAB4CBD004EF52C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4576EAC62CAB4CBD004EF52C /* ViewController.swift */; };
-		4576EACA2CAB4CBD004EF52C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4576EAC92CAB4CBD004EF52C /* Base */; };
-		4576EACC2CAB4CBF004EF52C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4576EACB2CAB4CBF004EF52C /* Assets.xcassets */; };
-		4576EACF2CAB4CBF004EF52C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4576EACE2CAB4CBF004EF52C /* Base */; };
 		4576EAE22CAB4E45004EF52C /* SCImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4576EAD42CAB4E45004EF52C /* SCImagePicker.storyboard */; };
 		4576EAEB2CAB572A004EF52C /* SCMediaPicker.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4576EAE92CAB572A004EF52C /* SCMediaPicker.strings */; };
 		4576EAF42CAB5882004EF52C /* SCAlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4576EAF32CAB5882004EF52C /* SCAlbumCell.swift */; };
@@ -48,14 +42,6 @@
 		4576EAA52CAB4C4F004EF52C /* SCMediaPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMediaPicker.h; sourceTree = "<group>"; };
 		4576EAAC2CAB4C4F004EF52C /* SCMediaPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCMediaPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4576EAB12CAB4C4F004EF52C /* SCMediaPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMediaPickerTests.swift; sourceTree = "<group>"; };
-		4576EAC02CAB4CBD004EF52C /* SCMediaPicker-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SCMediaPicker-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4576EAC22CAB4CBD004EF52C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4576EAC42CAB4CBD004EF52C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4576EAC62CAB4CBD004EF52C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4576EAC92CAB4CBD004EF52C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4576EACB2CAB4CBF004EF52C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4576EACE2CAB4CBF004EF52C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4576EAD02CAB4CBF004EF52C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4576EAD42CAB4E45004EF52C /* SCImagePicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SCImagePicker.storyboard; sourceTree = "<group>"; };
 		4576EAEA2CAB572A004EF52C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SCMediaPicker.strings; sourceTree = "<group>"; };
 		4576EAEC2CAB573C004EF52C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SCMediaPicker.strings"; sourceTree = "<group>"; };
@@ -87,13 +73,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4576EABD2CAB4CBD004EF52C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -112,7 +91,6 @@
 				4530A0BA2CAEADE500E9BE7D /* SCMediaPicker.podspec */,
 				4576EAA42CAB4C4F004EF52C /* SCMediaPicker */,
 				4576EAB02CAB4C4F004EF52C /* SCMediaPickerTests */,
-				4576EAC12CAB4CBD004EF52C /* SCMediaPicker-Demo */,
 				4576EAA32CAB4C4F004EF52C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,7 +100,6 @@
 			children = (
 				4576EAA22CAB4C4F004EF52C /* SCMediaPicker.framework */,
 				4576EAAC2CAB4C4F004EF52C /* SCMediaPickerTests.xctest */,
-				4576EAC02CAB4CBD004EF52C /* SCMediaPicker-Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,9 +107,9 @@
 		4576EAA42CAB4C4F004EF52C /* SCMediaPicker */ = {
 			isa = PBXGroup;
 			children = (
+				45B72F3B2CB69E2100BFE777 /* Controllers */,
+				45B72F3C2CB69E2D00BFE777 /* Views */,
 				4576EAA52CAB4C4F004EF52C /* SCMediaPicker.h */,
-				4576EAF22CAB5853004EF52C /* Controllers */,
-				4576EAF12CAB584D004EF52C /* Views */,
 				4530A0B82CAC97EF00E9BE7D /* Resources */,
 			);
 			path = SCMediaPicker;
@@ -146,21 +123,17 @@
 			path = SCMediaPickerTests;
 			sourceTree = "<group>";
 		};
-		4576EAC12CAB4CBD004EF52C /* SCMediaPicker-Demo */ = {
+		45B72F3B2CB69E2100BFE777 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4576EAC22CAB4CBD004EF52C /* AppDelegate.swift */,
-				4576EAC42CAB4CBD004EF52C /* SceneDelegate.swift */,
-				4576EAC62CAB4CBD004EF52C /* ViewController.swift */,
-				4576EAC82CAB4CBD004EF52C /* Main.storyboard */,
-				4576EACB2CAB4CBF004EF52C /* Assets.xcassets */,
-				4576EACD2CAB4CBF004EF52C /* LaunchScreen.storyboard */,
-				4576EAD02CAB4CBF004EF52C /* Info.plist */,
+				4530A0B22CAC5F4C00E9BE7D /* SCImagePickerController.swift */,
+				4530A0B42CAC609F00E9BE7D /* SCAlbumsViewController.swift */,
+				4530A0B62CAC64AF00E9BE7D /* SCAssetsViewController.swift */,
 			);
-			path = "SCMediaPicker-Demo";
+			name = Controllers;
 			sourceTree = "<group>";
 		};
-		4576EAF12CAB584D004EF52C /* Views */ = {
+		45B72F3C2CB69E2D00BFE777 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				4576EAF32CAB5882004EF52C /* SCAlbumCell.swift */,
@@ -170,17 +143,7 @@
 				4576EAFB2CAB59A7004EF52C /* SCSlomoIconView.swift */,
 				4576EAFD2CAB59D0004EF52C /* SCVideoIndicatorView.swift */,
 			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		4576EAF22CAB5853004EF52C /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				4530A0B22CAC5F4C00E9BE7D /* SCImagePickerController.swift */,
-				4530A0B42CAC609F00E9BE7D /* SCAlbumsViewController.swift */,
-				4530A0B62CAC64AF00E9BE7D /* SCAssetsViewController.swift */,
-			);
-			path = Controllers;
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,23 +196,6 @@
 			productReference = 4576EAAC2CAB4C4F004EF52C /* SCMediaPickerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4576EABF2CAB4CBD004EF52C /* SCMediaPicker-Demo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4576EAD32CAB4CBF004EF52C /* Build configuration list for PBXNativeTarget "SCMediaPicker-Demo" */;
-			buildPhases = (
-				4576EABC2CAB4CBD004EF52C /* Sources */,
-				4576EABD2CAB4CBD004EF52C /* Frameworks */,
-				4576EABE2CAB4CBD004EF52C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "SCMediaPicker-Demo";
-			productName = "SCMediaPicker-Demo";
-			productReference = 4576EAC02CAB4CBD004EF52C /* SCMediaPicker-Demo.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -265,9 +211,6 @@
 						LastSwiftMigration = 1540;
 					};
 					4576EAAB2CAB4C4F004EF52C = {
-						CreatedOnToolsVersion = 15.4;
-					};
-					4576EABF2CAB4CBD004EF52C = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -292,7 +235,6 @@
 			targets = (
 				4576EAA12CAB4C4F004EF52C /* SCMediaPicker */,
 				4576EAAB2CAB4C4F004EF52C /* SCMediaPickerTests */,
-				4576EABF2CAB4CBD004EF52C /* SCMediaPicker-Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -311,16 +253,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4576EABE2CAB4CBD004EF52C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4576EACC2CAB4CBF004EF52C /* Assets.xcassets in Resources */,
-				4576EACF2CAB4CBF004EF52C /* Base in Resources */,
-				4576EACA2CAB4CBD004EF52C /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,16 +283,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4576EABC2CAB4CBD004EF52C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4576EAC72CAB4CBD004EF52C /* ViewController.swift in Sources */,
-				4576EAC32CAB4CBD004EF52C /* AppDelegate.swift in Sources */,
-				4576EAC52CAB4CBD004EF52C /* SceneDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -372,22 +294,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4576EAC82CAB4CBD004EF52C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4576EAC92CAB4CBD004EF52C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4576EACD2CAB4CBF004EF52C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4576EACE2CAB4CBF004EF52C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		4576EAE92CAB572A004EF52C /* SCMediaPicker.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -638,64 +544,6 @@
 			};
 			name = Release;
 		};
-		4576EAD12CAB4CBF004EF52C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 76KA23L295;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "SCMediaPicker-Demo/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sitecapture.lib.SCMediaPicker-Demo";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		4576EAD22CAB4CBF004EF52C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 76KA23L295;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "SCMediaPicker-Demo/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sitecapture.lib.SCMediaPicker-Demo";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -722,15 +570,6 @@
 			buildConfigurations = (
 				4576EABA2CAB4C4F004EF52C /* Debug */,
 				4576EABB2CAB4C4F004EF52C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4576EAD32CAB4CBF004EF52C /* Build configuration list for PBXNativeTarget "SCMediaPicker-Demo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4576EAD12CAB4CBF004EF52C /* Debug */,
-				4576EAD22CAB4CBF004EF52C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

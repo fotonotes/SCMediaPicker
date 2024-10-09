@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0702C09CC614DD4DBD99AC9282CFE001 /* SCCheckmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3309BB147E5E6B25B5826EE773E96E5E /* SCCheckmarkView.swift */; };
+		24706BE4FC120CD85C894C2B9020637B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7D3A1DC66305E0DFF78E6A3046A809 /* Foundation.framework */; };
+		2F32FF2A746896FE2BB2663E96354858 /* SCVideoIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D017745B41E5EAFA43869A0BC9F7901C /* SCVideoIconView.swift */; };
+		301C3B802B7249AD5BD8C79791D0FD57 /* SCAssetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E4AEC8362024168398A63CE4582B5 /* SCAssetCell.swift */; };
+		3047934F529F2EFEADD9F239A9BF4B40 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 765226B46FDC6961B6E8B446E84E79E3 /* en.lproj */; };
+		388527C664D895388698F28B5823035B /* SCSlomoIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEAFB3A6163B7AF526562AABB993D7B /* SCSlomoIconView.swift */; };
+		49A31E3635452A04CC7E64FF43200E03 /* SCMediaPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABD51C40D5F87E0B1F1207A98D6D569C /* SCMediaPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CE274240A3B0181A28C6AB03CA9775D /* Pods-Demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3666E01CF3B1BB3B5EB22455C1F1E4F6 /* Pods-Demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52528A9064D3C6CBD2BC2B43F0D2958E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7D3A1DC66305E0DFF78E6A3046A809 /* Foundation.framework */; };
+		5D6751F5D9F8FA4A8ACFC0BB032ADFBE /* Pods-Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC0B6886FC27E9B0BED9829A43F1D61 /* Pods-Demo-dummy.m */; };
+		5EB54BB0962AAFE5CD24609397FC1F97 /* SCAlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B982BE16F1A0229CABDCDD35CBB5FCBB /* SCAlbumCell.swift */; };
+		64705E1640DAE0EF7368239A3B4ED644 /* SCAlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E95DF1714D0B6B47FAEA76461BC257 /* SCAlbumsViewController.swift */; };
+		676B2FE44310EA9B781F0AE5015A9C9F /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 47D677581A25B2C721EDF120B05F0069 /* es.lproj */; };
+		6B329854F68331759104E7DA9EA2535C /* SCImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133010DB1C42FBA5F041923DF2F89788 /* SCImagePickerController.swift */; };
+		70E40090FB700409E723975A46A0FEAD /* SCAssetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6E7738E93E037687101DAD2FB9BA4B /* SCAssetsViewController.swift */; };
+		827D600267FCEDFD308CE164523CFED2 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9E2E069988C820D8E9B5D90257CE451F /* zh-Hans.lproj */; };
+		AD872447C2E6FE78E34C587BC521354C /* SCVideoIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D659B31F7F218C3ED449EF38F2CB93AE /* SCVideoIndicatorView.swift */; };
+		B67ECF97037D4CD15E201A0F9F22DC02 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CF3EE348FA03DE9261DD120BF0A049 /* Photos.framework */; };
+		C22B241484058047841E42A984F095C9 /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D631F500C0B2C1684EFB70C5874A6B66 /* pl.lproj */; };
+		C5817DAC875CD5F9C3F5FE3B347D003B /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1340FA39E9513F8B0DA63F7E674C2A4E /* de.lproj */; };
+		CFFDE877FA876862EB935A051C2A29B4 /* SCMediaPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC16676193494B43AFFDCD5D36DB613 /* SCMediaPicker-dummy.m */; };
+		DADC03393E51AE37F4D4A5A61E506D7B /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 76DA2B0072B8E4A593B2845D25998A07 /* ja.lproj */; };
+		E5C1DEBCC849BEC6DE05E8AE07B56F1B /* SCImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4913212850DC99A9AD67FC19586BDBF8 /* SCImagePicker.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C95212790E04DE2E60AEE7AB2FA89D85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06733BE30BDB963D08E39972ADE9DDA7;
+			remoteInfo = SCMediaPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		006270CB2FD239E46799FBDB06CDDA20 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		06F3E5C6ECF6318B927DEBF7D3F68023 /* Pods-Demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Demo-acknowledgements.plist"; sourceTree = "<group>"; };
+		088E4AEC8362024168398A63CE4582B5 /* SCAssetCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCAssetCell.swift; path = SCMediaPicker/SCAssetCell.swift; sourceTree = "<group>"; };
+		0FC0B6886FC27E9B0BED9829A43F1D61 /* Pods-Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Demo-dummy.m"; sourceTree = "<group>"; };
+		133010DB1C42FBA5F041923DF2F89788 /* SCImagePickerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCImagePickerController.swift; path = SCMediaPicker/SCImagePickerController.swift; sourceTree = "<group>"; };
+		1340FA39E9513F8B0DA63F7E674C2A4E /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = SCMediaPicker/de.lproj; sourceTree = "<group>"; };
+		180B208EC1DA964E2B879CEF4D8874C5 /* SCMediaPicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SCMediaPicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		286FB7ED904A7A0E1C9B3D6791672A8D /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		31C8BF62D348BF0AAF0CF36CDB1D3BE0 /* SCMediaPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SCMediaPicker-Info.plist"; sourceTree = "<group>"; };
+		3309BB147E5E6B25B5826EE773E96E5E /* SCCheckmarkView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCCheckmarkView.swift; path = SCMediaPicker/SCCheckmarkView.swift; sourceTree = "<group>"; };
+		3666E01CF3B1BB3B5EB22455C1F1E4F6 /* Pods-Demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Demo-umbrella.h"; sourceTree = "<group>"; };
+		46993B84654A7871EDC3D6067BFD9710 /* SCMediaPicker */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCMediaPicker; path = SCMediaPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D677581A25B2C721EDF120B05F0069 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = SCMediaPicker/es.lproj; sourceTree = "<group>"; };
+		4913212850DC99A9AD67FC19586BDBF8 /* SCImagePicker.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = SCImagePicker.storyboard; path = SCMediaPicker/SCImagePicker.storyboard; sourceTree = "<group>"; };
+		55CF3EE348FA03DE9261DD120BF0A049 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
+		5D30FDAD8CECC381F32FF5F5B52175BC /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		6B82A68A97634A5152219EB56600D09D /* SCMediaPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCMediaPicker.debug.xcconfig; sourceTree = "<group>"; };
+		765226B46FDC6961B6E8B446E84E79E3 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = SCMediaPicker/en.lproj; sourceTree = "<group>"; };
+		76DA2B0072B8E4A593B2845D25998A07 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = SCMediaPicker/ja.lproj; sourceTree = "<group>"; };
+		77B925FF89F18A52D2977F4DCF75FA52 /* SCMediaPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCMediaPicker-prefix.pch"; sourceTree = "<group>"; };
+		77EBCE1FFE347A3644369F0343168C1D /* Pods-Demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Demo-frameworks.sh"; sourceTree = "<group>"; };
+		7B6E7738E93E037687101DAD2FB9BA4B /* SCAssetsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCAssetsViewController.swift; path = SCMediaPicker/SCAssetsViewController.swift; sourceTree = "<group>"; };
+		7E65ADC3B1644FF0F90473EEE697A2FF /* Pods-Demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Demo.modulemap"; sourceTree = "<group>"; };
+		9CEAFB3A6163B7AF526562AABB993D7B /* SCSlomoIconView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCSlomoIconView.swift; path = SCMediaPicker/SCSlomoIconView.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E2E069988C820D8E9B5D90257CE451F /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "SCMediaPicker/zh-Hans.lproj"; sourceTree = "<group>"; };
+		A2E95DF1714D0B6B47FAEA76461BC257 /* SCAlbumsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCAlbumsViewController.swift; path = SCMediaPicker/SCAlbumsViewController.swift; sourceTree = "<group>"; };
+		A58F1EB68BF715A0C9EF540F81F2728C /* SCMediaPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SCMediaPicker.modulemap; sourceTree = "<group>"; };
+		ABD51C40D5F87E0B1F1207A98D6D569C /* SCMediaPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCMediaPicker-umbrella.h"; sourceTree = "<group>"; };
+		B982BE16F1A0229CABDCDD35CBB5FCBB /* SCAlbumCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCAlbumCell.swift; path = SCMediaPicker/SCAlbumCell.swift; sourceTree = "<group>"; };
+		B9CCAB58F63E79A20274AF38BEA20896 /* SCMediaPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCMediaPicker.release.xcconfig; sourceTree = "<group>"; };
+		BDC16676193494B43AFFDCD5D36DB613 /* SCMediaPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCMediaPicker-dummy.m"; sourceTree = "<group>"; };
+		C694DE63ED5EAB66E3CA6D184271692B /* Pods-Demo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Demo"; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D017745B41E5EAFA43869A0BC9F7901C /* SCVideoIconView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCVideoIconView.swift; path = SCMediaPicker/SCVideoIconView.swift; sourceTree = "<group>"; };
+		D631F500C0B2C1684EFB70C5874A6B66 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pl.lproj; path = SCMediaPicker/pl.lproj; sourceTree = "<group>"; };
+		D659B31F7F218C3ED449EF38F2CB93AE /* SCVideoIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCVideoIndicatorView.swift; path = SCMediaPicker/SCVideoIndicatorView.swift; sourceTree = "<group>"; };
+		DDEDDEA5E8747667A9BBE52BA22B088D /* Pods-Demo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Demo-Info.plist"; sourceTree = "<group>"; };
+		E14C7B5E452F2DDF30E90A3950EE1807 /* Pods-Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FF7D3A1DC66305E0DFF78E6A3046A809 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75C3F5544F0360E674EA4E4D5EE0B36B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24706BE4FC120CD85C894C2B9020637B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBE8E5DAC5D8BCB04EB85E3A02B2622A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52528A9064D3C6CBD2BC2B43F0D2958E /* Foundation.framework in Frameworks */,
+				B67ECF97037D4CD15E201A0F9F22DC02 /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4C14CCF97D7CA3595D49BFD0BA76484 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21FF7982FCED7A76D3B9EB72011DACF2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8DEFD83AB893CB86C8528E6037CB868 /* Pods-Demo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		54DB93FD5AFC2B528CA570B428BCA108 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C694DE63ED5EAB66E3CA6D184271692B /* Pods-Demo */,
+				46993B84654A7871EDC3D6067BFD9710 /* SCMediaPicker */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6D6267B4135769022912D9D0B8DB580 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECE32A8DEBA65EF2083AEB2C2DF8ECDA /* SCMediaPicker */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A8DEFD83AB893CB86C8528E6037CB868 /* Pods-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				7E65ADC3B1644FF0F90473EEE697A2FF /* Pods-Demo.modulemap */,
+				E14C7B5E452F2DDF30E90A3950EE1807 /* Pods-Demo-acknowledgements.markdown */,
+				06F3E5C6ECF6318B927DEBF7D3F68023 /* Pods-Demo-acknowledgements.plist */,
+				0FC0B6886FC27E9B0BED9829A43F1D61 /* Pods-Demo-dummy.m */,
+				77EBCE1FFE347A3644369F0343168C1D /* Pods-Demo-frameworks.sh */,
+				DDEDDEA5E8747667A9BBE52BA22B088D /* Pods-Demo-Info.plist */,
+				3666E01CF3B1BB3B5EB22455C1F1E4F6 /* Pods-Demo-umbrella.h */,
+				5D30FDAD8CECC381F32FF5F5B52175BC /* Pods-Demo.debug.xcconfig */,
+				286FB7ED904A7A0E1C9B3D6791672A8D /* Pods-Demo.release.xcconfig */,
+			);
+			name = "Pods-Demo";
+			path = "Target Support Files/Pods-Demo";
+			sourceTree = "<group>";
+		};
+		B9B56C9ECAAC0AB24A3E8F0214ED3588 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A58F1EB68BF715A0C9EF540F81F2728C /* SCMediaPicker.modulemap */,
+				BDC16676193494B43AFFDCD5D36DB613 /* SCMediaPicker-dummy.m */,
+				31C8BF62D348BF0AAF0CF36CDB1D3BE0 /* SCMediaPicker-Info.plist */,
+				77B925FF89F18A52D2977F4DCF75FA52 /* SCMediaPicker-prefix.pch */,
+				ABD51C40D5F87E0B1F1207A98D6D569C /* SCMediaPicker-umbrella.h */,
+				6B82A68A97634A5152219EB56600D09D /* SCMediaPicker.debug.xcconfig */,
+				B9CCAB58F63E79A20274AF38BEA20896 /* SCMediaPicker.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "SCMediaPicker-Demo-Pods/Pods/Target Support Files/SCMediaPicker";
+			sourceTree = "<group>";
+		};
+		C4C14CCF97D7CA3595D49BFD0BA76484 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FF7D3A1DC66305E0DFF78E6A3046A809 /* Foundation.framework */,
+				55CF3EE348FA03DE9261DD120BF0A049 /* Photos.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				A6D6267B4135769022912D9D0B8DB580 /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				54DB93FD5AFC2B528CA570B428BCA108 /* Products */,
+				21FF7982FCED7A76D3B9EB72011DACF2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DBF12D1E549696E4AB0C3516B23FFB93 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				006270CB2FD239E46799FBDB06CDDA20 /* LICENSE */,
+				180B208EC1DA964E2B879CEF4D8874C5 /* SCMediaPicker.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		ECE32A8DEBA65EF2083AEB2C2DF8ECDA /* SCMediaPicker */ = {
+			isa = PBXGroup;
+			children = (
+				1340FA39E9513F8B0DA63F7E674C2A4E /* de.lproj */,
+				765226B46FDC6961B6E8B446E84E79E3 /* en.lproj */,
+				47D677581A25B2C721EDF120B05F0069 /* es.lproj */,
+				76DA2B0072B8E4A593B2845D25998A07 /* ja.lproj */,
+				D631F500C0B2C1684EFB70C5874A6B66 /* pl.lproj */,
+				B982BE16F1A0229CABDCDD35CBB5FCBB /* SCAlbumCell.swift */,
+				A2E95DF1714D0B6B47FAEA76461BC257 /* SCAlbumsViewController.swift */,
+				088E4AEC8362024168398A63CE4582B5 /* SCAssetCell.swift */,
+				7B6E7738E93E037687101DAD2FB9BA4B /* SCAssetsViewController.swift */,
+				3309BB147E5E6B25B5826EE773E96E5E /* SCCheckmarkView.swift */,
+				4913212850DC99A9AD67FC19586BDBF8 /* SCImagePicker.storyboard */,
+				133010DB1C42FBA5F041923DF2F89788 /* SCImagePickerController.swift */,
+				9CEAFB3A6163B7AF526562AABB993D7B /* SCSlomoIconView.swift */,
+				D017745B41E5EAFA43869A0BC9F7901C /* SCVideoIconView.swift */,
+				D659B31F7F218C3ED449EF38F2CB93AE /* SCVideoIndicatorView.swift */,
+				9E2E069988C820D8E9B5D90257CE451F /* zh-Hans.lproj */,
+				DBF12D1E549696E4AB0C3516B23FFB93 /* Pod */,
+				B9B56C9ECAAC0AB24A3E8F0214ED3588 /* Support Files */,
+			);
+			name = SCMediaPicker;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		076977F01820D31EEF760E4BB23C7E3C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A31E3635452A04CC7E64FF43200E03 /* SCMediaPicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		802DE76C33E6E1E5AD047EDC34668F99 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE274240A3B0181A28C6AB03CA9775D /* Pods-Demo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		06733BE30BDB963D08E39972ADE9DDA7 /* SCMediaPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 965B53097746CDC06750AA02226FB28B /* Build configuration list for PBXNativeTarget "SCMediaPicker" */;
+			buildPhases = (
+				076977F01820D31EEF760E4BB23C7E3C /* Headers */,
+				CAA88CA2F34A0D22FBB19E911A7FE22D /* Sources */,
+				CBE8E5DAC5D8BCB04EB85E3A02B2622A /* Frameworks */,
+				9BD70B5DE24D43C2F91D97D164211E1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCMediaPicker;
+			productName = SCMediaPicker;
+			productReference = 46993B84654A7871EDC3D6067BFD9710 /* SCMediaPicker */;
+			productType = "com.apple.product-type.framework";
+		};
+		380694B9ADC0CBB5D29A662EFE7F52C8 /* Pods-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A29ACB957723A892828F238C91DEB5E /* Build configuration list for PBXNativeTarget "Pods-Demo" */;
+			buildPhases = (
+				802DE76C33E6E1E5AD047EDC34668F99 /* Headers */,
+				8EEB8368632EA806035620E9EEF2C765 /* Sources */,
+				75C3F5544F0360E674EA4E4D5EE0B36B /* Frameworks */,
+				5FDBB3781EB21CBE4D2536329D37C219 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB4C6C3F7C0E2B8941BD5C40ED56F206 /* PBXTargetDependency */,
+			);
+			name = "Pods-Demo";
+			productName = Pods_Demo;
+			productReference = C694DE63ED5EAB66E3CA6D184271692B /* Pods-Demo */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				de,
+				en,
+				es,
+				ja,
+				pl,
+				"zh-Hans",
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 54DB93FD5AFC2B528CA570B428BCA108 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				380694B9ADC0CBB5D29A662EFE7F52C8 /* Pods-Demo */,
+				06733BE30BDB963D08E39972ADE9DDA7 /* SCMediaPicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FDBB3781EB21CBE4D2536329D37C219 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BD70B5DE24D43C2F91D97D164211E1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5817DAC875CD5F9C3F5FE3B347D003B /* de.lproj in Resources */,
+				3047934F529F2EFEADD9F239A9BF4B40 /* en.lproj in Resources */,
+				676B2FE44310EA9B781F0AE5015A9C9F /* es.lproj in Resources */,
+				DADC03393E51AE37F4D4A5A61E506D7B /* ja.lproj in Resources */,
+				C22B241484058047841E42A984F095C9 /* pl.lproj in Resources */,
+				E5C1DEBCC849BEC6DE05E8AE07B56F1B /* SCImagePicker.storyboard in Resources */,
+				827D600267FCEDFD308CE164523CFED2 /* zh-Hans.lproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8EEB8368632EA806035620E9EEF2C765 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D6751F5D9F8FA4A8ACFC0BB032ADFBE /* Pods-Demo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAA88CA2F34A0D22FBB19E911A7FE22D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EB54BB0962AAFE5CD24609397FC1F97 /* SCAlbumCell.swift in Sources */,
+				64705E1640DAE0EF7368239A3B4ED644 /* SCAlbumsViewController.swift in Sources */,
+				301C3B802B7249AD5BD8C79791D0FD57 /* SCAssetCell.swift in Sources */,
+				70E40090FB700409E723975A46A0FEAD /* SCAssetsViewController.swift in Sources */,
+				0702C09CC614DD4DBD99AC9282CFE001 /* SCCheckmarkView.swift in Sources */,
+				6B329854F68331759104E7DA9EA2535C /* SCImagePickerController.swift in Sources */,
+				CFFDE877FA876862EB935A051C2A29B4 /* SCMediaPicker-dummy.m in Sources */,
+				388527C664D895388698F28B5823035B /* SCSlomoIconView.swift in Sources */,
+				2F32FF2A746896FE2BB2663E96354858 /* SCVideoIconView.swift in Sources */,
+				AD872447C2E6FE78E34C587BC521354C /* SCVideoIndicatorView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB4C6C3F7C0E2B8941BD5C40ED56F206 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SCMediaPicker;
+			target = 06733BE30BDB963D08E39972ADE9DDA7 /* SCMediaPicker */;
+			targetProxy = C95212790E04DE2E60AEE7AB2FA89D85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		119D25BC8590F02A997CE3B28DA2EFA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		33C471888138725A220B2CB0A1623EB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B82A68A97634A5152219EB56600D09D /* SCMediaPicker.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SCMediaPicker/SCMediaPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCMediaPicker/SCMediaPicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SCMediaPicker/SCMediaPicker.modulemap";
+				PRODUCT_MODULE_NAME = SCMediaPicker;
+				PRODUCT_NAME = SCMediaPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		59CC7B4DD86E658018BA658F1ECCF65C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9CCAB58F63E79A20274AF38BEA20896 /* SCMediaPicker.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SCMediaPicker/SCMediaPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCMediaPicker/SCMediaPicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SCMediaPicker/SCMediaPicker.modulemap";
+				PRODUCT_MODULE_NAME = SCMediaPicker;
+				PRODUCT_NAME = SCMediaPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6AAFD6269FA4562EF8E7837D6CD555DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D30FDAD8CECC381F32FF5F5B52175BC /* Pods-Demo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Demo/Pods-Demo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Demo/Pods-Demo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6F4225877C794ABEB78776F47754104E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CF61D6795D18862D641ABA4C30937185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 286FB7ED904A7A0E1C9B3D6791672A8D /* Pods-Demo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Demo/Pods-Demo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Demo/Pods-Demo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				119D25BC8590F02A997CE3B28DA2EFA5 /* Debug */,
+				6F4225877C794ABEB78776F47754104E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A29ACB957723A892828F238C91DEB5E /* Build configuration list for PBXNativeTarget "Pods-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AAFD6269FA4562EF8E7837D6CD555DA /* Debug */,
+				CF61D6795D18862D641ABA4C30937185 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		965B53097746CDC06750AA02226FB28B /* Build configuration list for PBXNativeTarget "SCMediaPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33C471888138725A220B2CB0A1623EB1 /* Debug */,
+				59CC7B4DD86E658018BA658F1ECCF65C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

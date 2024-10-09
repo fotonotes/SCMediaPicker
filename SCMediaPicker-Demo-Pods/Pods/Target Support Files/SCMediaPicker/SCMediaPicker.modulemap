@@ -1,0 +1,6 @@
+framework module SCMediaPicker {
+  umbrella header "SCMediaPicker-umbrella.h"
+
+  export *
+  module * { export * }
+}
