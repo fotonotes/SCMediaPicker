@@ -10,6 +10,7 @@
 		4530A0B32CAC5F4C00E9BE7D /* SCImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530A0B22CAC5F4C00E9BE7D /* SCImagePickerController.swift */; };
 		4530A0B52CAC609F00E9BE7D /* SCAlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530A0B42CAC609F00E9BE7D /* SCAlbumsViewController.swift */; };
 		4530A0B72CAC64AF00E9BE7D /* SCAssetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530A0B62CAC64AF00E9BE7D /* SCAssetsViewController.swift */; };
+		455315932EEEC8460078F939 /* PHAsset+ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455315922EEEC8460078F939 /* PHAsset+ImageData.swift */; };
 		4576EAAD2CAB4C4F004EF52C /* SCMediaPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4576EAA22CAB4C4F004EF52C /* SCMediaPicker.framework */; };
 		4576EAB22CAB4C4F004EF52C /* SCMediaPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4576EAB12CAB4C4F004EF52C /* SCMediaPickerTests.swift */; };
 		4576EAB32CAB4C4F004EF52C /* SCMediaPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4576EAA52CAB4C4F004EF52C /* SCMediaPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,6 +39,7 @@
 		4530A0B42CAC609F00E9BE7D /* SCAlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCAlbumsViewController.swift; sourceTree = "<group>"; };
 		4530A0B62CAC64AF00E9BE7D /* SCAssetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCAssetsViewController.swift; sourceTree = "<group>"; };
 		4530A0BA2CAEADE500E9BE7D /* SCMediaPicker.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SCMediaPicker.podspec; sourceTree = "<group>"; };
+		455315922EEEC8460078F939 /* PHAsset+ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PHAsset+ImageData.swift"; sourceTree = "<group>"; };
 		4576EAA22CAB4C4F004EF52C /* SCMediaPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCMediaPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4576EAA52CAB4C4F004EF52C /* SCMediaPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMediaPicker.h; sourceTree = "<group>"; };
 		4576EAAC2CAB4C4F004EF52C /* SCMediaPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCMediaPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,7 @@
 		4576EAA42CAB4C4F004EF52C /* SCMediaPicker */ = {
 			isa = PBXGroup;
 			children = (
+				455315922EEEC8460078F939 /* PHAsset+ImageData.swift */,
 				45B72F3B2CB69E2100BFE777 /* Controllers */,
 				45B72F3C2CB69E2D00BFE777 /* Views */,
 				4576EAA52CAB4C4F004EF52C /* SCMediaPicker.h */,
@@ -271,6 +274,7 @@
 				4576EAF62CAB58CE004EF52C /* SCAssetCell.swift in Sources */,
 				4576EAFA2CAB593A004EF52C /* SCVideoIconView.swift in Sources */,
 				4576EAF42CAB5882004EF52C /* SCAlbumCell.swift in Sources */,
+				455315932EEEC8460078F939 /* PHAsset+ImageData.swift in Sources */,
 				4576EAF82CAB5928004EF52C /* SCCheckmarkView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
