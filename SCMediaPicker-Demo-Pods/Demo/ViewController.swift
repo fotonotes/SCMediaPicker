@@ -51,7 +51,70 @@ class ViewController: UITableViewController, SCImagePickerControllerDelegate {
     func sc_imagePickerController(_ imagePickerController: SCImagePickerController, didFinishPickingAssets assets: [PHAsset]) {
         print("Selected assets:")
         print(assets)
-        
+
+        // Example 1: Extract EXIF metadata including creation date
+        print("\n=== EXIF Metadata Example ===")
+        for (index, asset) in assets.enumerated() {
+            print("\nAsset \(index + 1):")
+            asset.requestImageDataPreservingEXIF { data, uti, orientation, metadata in
+                if let metadata = metadata {
+                    print("Full metadata: \(metadata)")
+
+                    // Extract EXIF data
+                    if let exif = metadata[kCGImagePropertyExifDictionary] as? [String: Any] {
+                        print("EXIF Data:")
+                        if let dateTimeOriginal = exif[kCGImagePropertyExifDateTimeOriginal as String] {
+                            print("  Date Taken: \(dateTimeOriginal)")
+                        }
+                        if let dateTimeDigitized = exif[kCGImagePropertyExifDateTimeDigitized as String] {
+                            print("  Date Digitized: \(dateTimeDigitized)")
+                        }
+                    }
+
+                    // Extract TIFF data (contains additional date info)
+                    if let tiff = metadata[kCGImagePropertyTIFFDictionary] as? [String: Any] {
+                        print("TIFF Data:")
+                        if let dateTime = tiff[kCGImagePropertyTIFFDateTime as String] {
+                            print("  DateTime: \(dateTime)")
+                        }
+                    }
+
+                    // Extract GPS data
+                    if let gps = metadata[kCGImagePropertyGPSDictionary] as? [String: Any] {
+                        print("GPS Data:")
+                        if let latitude = gps[kCGImagePropertyGPSLatitude as String],
+                           let longitude = gps[kCGImagePropertyGPSLongitude as String] {
+                            print("  Location: \(latitude), \(longitude)")
+                        }
+                        if let timeStamp = gps[kCGImagePropertyGPSTimeStamp as String] {
+                            print("  GPS Time: \(timeStamp)")
+                        }
+                    }
+                } else {
+                    print("No metadata found for asset \(index + 1)")
+                }
+            }
+        }
+
+        // Example 2: Export image data with EXIF preserved
+        print("\n=== Export with EXIF Preserved ===")
+        if let firstAsset = assets.first {
+            firstAsset.exportImageDataWithEXIF(compressionQuality: 0.9) { imageData in
+                if let imageData = imageData {
+                    print("Exported image data size: \(imageData.count) bytes")
+                    print("This data includes all EXIF metadata and can be saved to disk or uploaded")
+
+                    // Verify EXIF is preserved in exported data
+                    if let imageSource = CGImageSourceCreateWithData(imageData as CFData, nil),
+                       let properties = CGImageSourceCopyPropertiesAtIndex(imageSource, 0, nil) as? [String: Any] {
+                        print("EXIF preserved in exported data: \(properties.keys.contains(kCGImagePropertyExifDictionary as String))")
+                    }
+                } else {
+                    print("Failed to export image data")
+                }
+            }
+        }
+
         dismiss(animated: true, completion: nil)
     }
 

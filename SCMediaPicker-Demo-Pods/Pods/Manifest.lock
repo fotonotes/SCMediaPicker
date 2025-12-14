@@ -1,5 +1,5 @@
 PODS:
-  - SCMediaPicker (1.0.3)
+  - SCMediaPicker (1.0.4)
 
 DEPENDENCIES:
   - SCMediaPicker (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SCMediaPicker: 0f0faac1cee0968acb8f6a436970fb29db0f8ac9
+  SCMediaPicker: 7cbb69816c755572fa20aa6c5be8dbec77c373f0
 
 PODFILE CHECKSUM: 1044f8853c7df83e9e619bc3c26e7a9c34f47e82
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2
