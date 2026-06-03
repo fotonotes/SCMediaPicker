@@ -382,7 +382,7 @@ class SCAssetsViewController: UICollectionViewController, PHPhotoLibraryChangeOb
         // Selection state
         if imagePickerController?.selectedAssets.contains(asset) == true {
             cell.isSelected = true
-            collectionView.selectItem(at: indexPath, animated: false, scrollPosition: UICollectionView.ScrollPosition.centeredVertically)
+            collectionView.selectItem(at: indexPath, animated: false, scrollPosition: [])
         }
         
         return cell
