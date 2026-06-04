@@ -91,7 +91,7 @@ class SCAssetsViewController: UICollectionViewController, PHPhotoLibraryChangeOb
         }
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         disableScrollToBottom = true
     }
@@ -307,7 +307,7 @@ class SCAssetsViewController: UICollectionViewController, PHPhotoLibraryChangeOb
             if let collectionChanges = changeInstance.changeDetails(for: fetchResult) {
                 self.fetchResult = collectionChanges.fetchResultAfterChanges
                 
-                if collectionChanges.hasIncrementalChanges {
+                if collectionChanges.hasIncrementalChanges && !collectionChanges.hasMoves {
                     self.collectionView.performBatchUpdates {
                         if let removedIndexes = collectionChanges.removedIndexes {
                             let indexPaths = removedIndexes.sc_indexPathsFromIndexes(withSection: 0)
@@ -452,7 +452,11 @@ class SCAssetsViewController: UICollectionViewController, PHPhotoLibraryChangeOb
         if let delegate = imagePickerController?.delegate, let asset = fetchResult?.object(at: indexPath.item) {
             return delegate.sc_imagePickerController(imagePickerController!, shouldSelectAsset: asset)
         }
-        
+
+        if isAutoDeselectEnabled {
+            return true
+        }
+
         return !isMaximumSelectionLimitReached()
     }
     
